@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nuapp/utils/colors_utils.dart';
 
+import '../base/base_screen.dart';
+
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
 
@@ -160,7 +162,12 @@ class _SignInScreenState extends State<SignInScreen> {
                       height: 50,
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) {
+                            return const BaseScreen();
+                          }));
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Palette.primaryColor,
                           shape: RoundedRectangleBorder(
