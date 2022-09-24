@@ -66,41 +66,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 Container(
                   decoration: const BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(20))),
-                  height: size.height * 0.73,
+                  height: size.height * 0.70,
                   width: double.infinity,
                   child: Stack(
                     children: [
-                      Positioned(
-                        top: 10,
-                        left: 15,
-                        child: Container(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 12, vertical: 5),
-                            decoration: BoxDecoration(
-                              color: Palette.primaryColorLight,
-                              border: Border.all(
-                                  width: 1,
-                                  style: BorderStyle.solid,
-                                  color: Palette.primaryColorLight),
-                              borderRadius:
-                                  const BorderRadius.all(Radius.circular(20)),
-                            ),
-                            child: Row(
-                              children: const [
-                                Icon(
-                                  Icons.arrow_right_alt_outlined,
-                                  color: Palette.primaryColor,
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.only(left: 5),
-                                  child: Text(
-                                    "3 miles",
-                                    style: TextStyle(color: Colors.grey),
-                                  ),
-                                )
-                              ],
-                            )),
-                      ),
                       Column(
                         children: [
                           Container(
@@ -194,6 +163,37 @@ class _HomeScreenState extends State<HomeScreen> {
                             )
                           ],
                         ),
+                      ),
+                      Positioned(
+                        top: 10,
+                        left: 15,
+                        child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 12, vertical: 5),
+                            decoration: BoxDecoration(
+                              color: Palette.primaryColorLight,
+                              border: Border.all(
+                                  width: 1,
+                                  style: BorderStyle.solid,
+                                  color: Palette.primaryColorLight),
+                              borderRadius:
+                                  const BorderRadius.all(Radius.circular(20)),
+                            ),
+                            child: Row(
+                              children: const [
+                                Icon(
+                                  Icons.arrow_right_alt_outlined,
+                                  color: Palette.primaryColor,
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 5),
+                                  child: Text(
+                                    "3 miles",
+                                    style: TextStyle(color: Colors.grey),
+                                  ),
+                                )
+                              ],
+                            )),
                       ),
                     ],
                   ),
