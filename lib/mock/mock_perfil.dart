@@ -1,22 +1,24 @@
 import '../model/perfil_user.dart';
 
-PerfilUser user1 = PerfilUser(
-  imgUrl: 'assets/fruits/apple.png',
-  itemName: 'Nome 1',
-);
-
-PerfilUser user2 = PerfilUser(
-  imgUrl: 'assets/fruits/grape.png',
-  itemName: 'Nome 2',
-);
-
-PerfilUser user3 = PerfilUser(
-  imgUrl: 'assets/fruits/guava.png',
-  itemName: 'Nome 3',
-);
-
-List<PerfilUser> items = [
-  user1,
-  user2,
-  user3,
-];
+List<PerfilUser> draggableItems = [
+    const PerfilUser(
+        name: 'Rohini',
+        distance: '10 miles away',
+        imageAsset: 'assets/images/avatar_1.png'),
+    const PerfilUser(
+        name: 'Rohini',
+        distance: '10 miles away',
+        imageAsset: 'assets/images/avatar_2.png'),
+    const PerfilUser(
+        name: 'Rohini',
+        distance: '10 miles away',
+        imageAsset: 'assets/images/avatar_3.png'),
+    const PerfilUser(
+        name: 'Rohini',
+        distance: '10 miles away',
+        imageAsset: 'assets/images/avatar_4.png'),
+    const PerfilUser(
+        name: 'Rohini',
+        distance: '10 miles away',
+        imageAsset: 'assets/images/avatar_5.png'),
+  ];
