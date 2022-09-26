@@ -18,4 +18,6 @@ class MyApp extends StatelessWidget {
       home: const SignInScreen(),
     );
   }
-}
+} 
+
+enum Swipe { left, right, none }

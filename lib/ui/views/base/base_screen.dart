@@ -76,9 +76,9 @@ class _BaseScreenState extends State<BaseScreen> {
               label: '',
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.favorite),
-                label: '',
-                backgroundColor: Colors.yellow),
+              icon: Icon(Icons.favorite),
+              label: '',
+            ),
             BottomNavigationBarItem(
               icon: Icon(Icons.chat),
               label: '',

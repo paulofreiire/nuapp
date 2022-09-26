@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nuapp/ui/views/home/widgets/profile_card.dart';
 import 'package:nuapp/ui/views/home/widgets/tag_widget.dart';
 
+import '../../../../main.dart';
 import '../../../../model/perfil_user.dart';
-
-enum Swipe { left, right, none }
 
 class DragWidget extends StatefulWidget {
   const DragWidget({
