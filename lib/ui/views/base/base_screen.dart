@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nuapp/utils/colors_utils.dart';
-import '../home/home.dart';
+import '../home/home_screen.dart';
+import '../profile/profile_screen.dart';
 
 class BaseScreen extends StatefulWidget {
   const BaseScreen({super.key});
@@ -36,11 +37,7 @@ class _BaseScreenState extends State<BaseScreen> {
               'Page 4',
             ),
           ),
-          Center(
-            child: Text(
-              'Page 5',
-            ),
-          ),
+          ProfileScreen()
         ],
       ),
       bottomNavigationBar: Container(
