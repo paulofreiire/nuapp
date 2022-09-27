@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nuapp/ui/views/match/match_screen.dart';
 import 'package:nuapp/utils/colors_utils.dart';
 import '../home/home_screen.dart';
 import '../profile/profile_screen.dart';
@@ -27,11 +28,7 @@ class _BaseScreenState extends State<BaseScreen> {
               'Page 2',
             ),
           ),
-          Center(
-            child: Text(
-              'Page 3',
-            ),
-          ),
+          MatchScreen(),
           Center(
             child: Text(
               'Page 4',
