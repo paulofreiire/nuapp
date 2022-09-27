@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:nuapp/ui/views/profile/widgets/tile_item_widget.dart';
 import 'package:nuapp/utils/colors_utils.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -131,295 +132,83 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       height: 2,
                       color: Colors.grey.shade400,
                     ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  vertical: 10,
-                                ),
-                                child: Container(
-                                  height: 55,
-                                  width: 55,
-                                  decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(30)),
-                                      color: Palette.primaryColorLight),
-                                  child: Center(
-                                      child: Icon(
-                                    Icons.person,
-                                    color: Palette.primaryColor,
-                                  )),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 10),
-                                child: Text(
-                                  "Edit profile",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              )
-                            ],
-                          ),
-                          const Icon(
-                            Icons.keyboard_arrow_right_sharp,
-                            color: Palette.primaryColor,
-                          )
-                        ],
+                    TileItemWidget(
+                      onTap: () => print("PEGANDO"),
+                      label: "Edit Profile",
+                      icon: Icons.person,
+                      widgetComplement: const Icon(
+                        Icons.keyboard_arrow_right_sharp,
+                        color: Palette.primaryColor,
                       ),
                     ),
                     Divider(
                       height: 2,
                       color: Colors.grey.shade400,
                     ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  vertical: 10,
-                                ),
-                                child: Container(
-                                  height: 55,
-                                  width: 55,
-                                  decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(30)),
-                                      color: Palette.primaryColorLight),
-                                  child: Center(
-                                      child: Icon(
-                                    Icons.person,
-                                    color: Palette.primaryColor,
-                                  )),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 10),
-                                child: Text(
-                                  "Edit profile",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              )
-                            ],
-                          ),
-                          const Icon(
-                            Icons.keyboard_arrow_right_sharp,
-                            color: Palette.primaryColor,
-                          )
-                        ],
+                    TileItemWidget(
+                      onTap: () => print("PEGANDO"),
+                      label: "Notification",
+                      icon: Icons.notifications,
+                      widgetComplement: const Icon(
+                        Icons.keyboard_arrow_right_sharp,
+                        color: Palette.primaryColor,
                       ),
                     ),
                     Divider(
                       height: 2,
                       color: Colors.grey.shade400,
                     ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  vertical: 10,
-                                ),
-                                child: Container(
-                                  height: 55,
-                                  width: 55,
-                                  decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(30)),
-                                      color: Palette.primaryColorLight),
-                                  child: Center(
-                                      child: Icon(
-                                    Icons.person,
-                                    color: Palette.primaryColor,
-                                  )),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 10),
-                                child: Text(
-                                  "Edit profile",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              )
-                            ],
-                          ),
-                          const Icon(
-                            Icons.keyboard_arrow_right_sharp,
-                            color: Palette.primaryColor,
-                          )
-                        ],
+                    TileItemWidget(
+                      onTap: () => print("PEGANDO"),
+                      label: "Security",
+                      icon: Icons.lock,
+                      widgetComplement: const Icon(
+                        Icons.keyboard_arrow_right_sharp,
+                        color: Palette.primaryColor,
                       ),
                     ),
                     Divider(
                       height: 2,
                       color: Colors.grey.shade400,
                     ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  vertical: 10,
-                                ),
-                                child: Container(
-                                  height: 55,
-                                  width: 55,
-                                  decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(30)),
-                                      color: Palette.primaryColorLight),
-                                  child: Center(
-                                      child: Icon(
-                                    Icons.person,
-                                    color: Palette.primaryColor,
-                                  )),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 10),
-                                child: Text(
-                                  "Edit profile",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              )
-                            ],
-                          ),
-                          const Icon(
-                            Icons.keyboard_arrow_right_sharp,
-                            color: Palette.primaryColor,
-                          )
-                        ],
+                    TileItemWidget(
+                      onTap: () => print("PEGANDO"),
+                      label: "Dark Mode",
+                      icon: Icons.remove_red_eye,
+                      widgetComplement: CupertinoSwitch(
+                        activeColor: Palette.primaryColor,
+                        value: switchValue,
+                        onChanged: (value) {
+                          setState(() {
+                            switchValue = value;
+                          });
+                        },
                       ),
                     ),
                     Divider(
                       height: 2,
                       color: Colors.grey.shade400,
                     ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  vertical: 10,
-                                ),
-                                child: Container(
-                                  height: 55,
-                                  width: 55,
-                                  decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(30)),
-                                      color: Palette.primaryColorLight),
-                                  child: Center(
-                                      child: Icon(
-                                    Icons.person,
-                                    color: Palette.primaryColor,
-                                  )),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 10),
-                                child: Text(
-                                  "Edit profile",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              )
-                            ],
-                          ),
-                          const Icon(
-                            Icons.keyboard_arrow_right_sharp,
-                            color: Palette.primaryColor,
-                          )
-                        ],
-                      ),
-                    ),
+                    TileItemWidget(
+                        onTap: () => print("PEGANDO"),
+                        label: "Invinte Friends",
+                        icon: Icons.person_add_alt,
+                        widgetComplement: const Icon(
+                          Icons.keyboard_arrow_right_sharp,
+                          color: Palette.primaryColor,
+                        )),
                     Divider(
                       height: 2,
                       color: Colors.grey.shade400,
                     ),
-                    SizedBox(
-                      width: double.infinity,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                  vertical: 10,
-                                ),
-                                child: Container(
-                                  height: 55,
-                                  width: 55,
-                                  decoration: BoxDecoration(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(30)),
-                                      color: Palette.primaryColorLight),
-                                  child: Center(
-                                      child: Icon(
-                                    Icons.person,
-                                    color: Palette.primaryColor,
-                                  )),
-                                ),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.only(left: 10),
-                                child: Text(
-                                  "Edit profile",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                              )
-                            ],
-                          ),
-                          CupertinoSwitch(
-                            activeColor: Palette.primaryColor,
-                            value: switchValue,
-                            onChanged: (value) {
-                              setState(() {
-                                switchValue = value;
-                              });
-                            },
-                          ),
-                        ],
-                      ),
-                    ),
+                    TileItemWidget(
+                        onTap: () => print("PEGANDO"),
+                        label: "Logout",
+                        icon: Icons.logout,
+                        widgetComplement: const Icon(
+                          Icons.keyboard_arrow_right_sharp,
+                          color: Palette.primaryColor,
+                        )),
                     Divider(
                       height: 2,
                       color: Colors.grey.shade400,
