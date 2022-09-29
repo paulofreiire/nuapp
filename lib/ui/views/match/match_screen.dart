@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nuapp/teste.dart';
+import 'package:nuapp/ui/views/match/screen/details_screen.dart';
 import 'package:nuapp/ui/views/match/widgets/card_small_widget.dart';
 import 'package:nuapp/ui/views/match/widgets/card_widget.dart';
 import 'package:nuapp/utils/colors_utils.dart';
@@ -123,7 +123,7 @@ class _MatchScreenState extends State<MatchScreen> {
               ),
               // New Match See All
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 25),
+                padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
@@ -142,22 +142,28 @@ class _MatchScreenState extends State<MatchScreen> {
                 ),
               ),
               // ListCardBig
-              SizedBox(
-                height: 310,
-                width: size.width,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  shrinkWrap: true,
-                  itemCount: 52,
-                  itemBuilder: (BuildContext context, int index) {
-                    return const CardListWidget();
-                  },
-                  separatorBuilder: (_, index) => const SizedBox(width: 5),
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const DetailScreen()));
+                },
+                child: SizedBox(
+                  height: 310,
+                  width: size.width,
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    shrinkWrap: true,
+                    itemCount: 52,
+                    itemBuilder: (BuildContext context, int index) {
+                      return const CardListWidget();
+                    },
+                    separatorBuilder: (_, index) => const SizedBox(width: 5),
+                  ),
                 ),
               ),
               // All Match See All Row
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 25),
+                padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: const [
@@ -176,17 +182,23 @@ class _MatchScreenState extends State<MatchScreen> {
                 ),
               ),
               // ListCardSmall
-              SizedBox(
-                height: 220,
-                width: size.width,
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  shrinkWrap: true,
-                  itemCount: 52,
-                  itemBuilder: (BuildContext context, int index) {
-                    return const CardSmallListWidget();
-                  },
-                  separatorBuilder: (_, index) => const SizedBox(width: 8),
+              GestureDetector(
+                onTap: () {
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const DetailScreen()));
+                },
+                child: SizedBox(
+                  height: 220,
+                  width: size.width,
+                  child: ListView.separated(
+                    scrollDirection: Axis.horizontal,
+                    shrinkWrap: true,
+                    itemCount: 52,
+                    itemBuilder: (BuildContext context, int index) {
+                      return const CardSmallListWidget();
+                    },
+                    separatorBuilder: (_, index) => const SizedBox(width: 8),
+                  ),
                 ),
               ),
               //Divider

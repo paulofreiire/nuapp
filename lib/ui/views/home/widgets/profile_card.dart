@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../../model/perfil_user.dart';
-import '../../../../utils/colors_utils.dart';
+
 
 class ProfileCard extends StatelessWidget {
   const ProfileCard({Key? key, required this.profile}) : super(key: key);

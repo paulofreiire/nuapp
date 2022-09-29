@@ -347,7 +347,7 @@ class _HomeScreenState extends State<HomeScreen>
                               );
                             },
                             onAccept: (int index) {
-                              print("Dar Deslike request User");
+                
                               setState(() {
                                 draggableItems.removeAt(index);
                               });
@@ -371,7 +371,7 @@ class _HomeScreenState extends State<HomeScreen>
                               );
                             },
                             onAccept: (int index) {
-                              print("Dar Like request User");
+                        
                               setState(() {
                                 draggableItems.removeAt(index);
                               });

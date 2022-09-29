@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nuapp/utils/colors_utils.dart';
 
 class CardSmallListWidget extends StatelessWidget {
   const CardSmallListWidget({super.key});
