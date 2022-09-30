@@ -133,7 +133,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.grey.shade400,
                     ),
                     TileItemWidget(
-                      onTap: (){},
+                      onTap: () {},
                       label: "Edit Profile",
                       icon: Icons.person,
                       widgetComplement: const Icon(
@@ -159,7 +159,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.grey.shade400,
                     ),
                     TileItemWidget(
-                      onTap: (){},
+                      onTap: () {},
                       label: "Security",
                       icon: Icons.lock,
                       widgetComplement: const Icon(
@@ -172,7 +172,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.grey.shade400,
                     ),
                     TileItemWidget(
-                      onTap: (){},
+                      onTap: () {},
                       label: "Dark Mode",
                       icon: Icons.remove_red_eye,
                       widgetComplement: CupertinoSwitch(
@@ -190,7 +190,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.grey.shade400,
                     ),
                     TileItemWidget(
-                        onTap: (){},
+                        onTap: () {},
                         label: "Invinte Friends",
                         icon: Icons.person_add_alt,
                         widgetComplement: const Icon(
@@ -202,7 +202,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.grey.shade400,
                     ),
                     TileItemWidget(
-                        onTap: (){},
+                        onTap: () {},
                         label: "Logout",
                         icon: Icons.logout,
                         widgetComplement: const Icon(

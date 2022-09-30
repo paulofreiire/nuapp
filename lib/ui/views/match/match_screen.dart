@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:nuapp/ui/views/match/screen/details_screen.dart';
+import 'package:nuapp/ui/views/details/details_screen.dart';
 import 'package:nuapp/ui/views/match/widgets/card_small_widget.dart';
 import 'package:nuapp/ui/views/match/widgets/card_widget.dart';
 import 'package:nuapp/utils/colors_utils.dart';
 
 import '../../../model/perfil_user.dart';
+import '../all_match/all_match_page.dart';
 
 class MatchScreen extends StatefulWidget {
   const MatchScreen({super.key});
@@ -73,9 +74,7 @@ class _MatchScreenState extends State<MatchScreen> {
           child: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Container(
-          alignment: Alignment.center,
           width: size.width,
-          height: size.height,
           padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
           child: Column(
             children: [
@@ -100,7 +99,7 @@ class _MatchScreenState extends State<MatchScreen> {
                       const Padding(
                         padding: EdgeInsets.only(left: 13),
                         child: Text(
-                          'Kencan',
+                          'Match',
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 20,
@@ -126,17 +125,23 @@ class _MatchScreenState extends State<MatchScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Text(
+                  children: [
+                    const Text(
                       "New Match",
                       style: TextStyle(
                           color: Colors.black, fontWeight: FontWeight.bold),
                     ),
-                    Text(
-                      "See All",
-                      style: TextStyle(
-                          color: Palette.primaryColor,
-                          fontWeight: FontWeight.bold),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const AllMatchScreen()));
+                      },
+                      child: const Text(
+                        "See All",
+                        style: TextStyle(
+                            color: Palette.primaryColor,
+                            fontWeight: FontWeight.bold),
+                      ),
                     )
                   ],
                 ),
@@ -144,8 +149,8 @@ class _MatchScreenState extends State<MatchScreen> {
               // ListCardBig
               GestureDetector(
                 onTap: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => const DetailScreen()));
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const DetailScreen()));
                 },
                 child: SizedBox(
                   height: 310,
@@ -166,17 +171,23 @@ class _MatchScreenState extends State<MatchScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 25),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Text(
+                  children: [
+                    const Text(
                       "All Match",
                       style: TextStyle(
                           color: Colors.black, fontWeight: FontWeight.bold),
                     ),
-                    Text(
-                      "See All",
-                      style: TextStyle(
-                          color: Palette.primaryColor,
-                          fontWeight: FontWeight.bold),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const AllMatchScreen()));
+                      },
+                      child: const Text(
+                        "See All",
+                        style: TextStyle(
+                            color: Palette.primaryColor,
+                            fontWeight: FontWeight.bold),
+                      ),
                     )
                   ],
                 ),
@@ -184,8 +195,8 @@ class _MatchScreenState extends State<MatchScreen> {
               // ListCardSmall
               GestureDetector(
                 onTap: () {
-                  Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => const DetailScreen()));
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const DetailScreen()));
                 },
                 child: SizedBox(
                   height: 220,
@@ -205,7 +216,7 @@ class _MatchScreenState extends State<MatchScreen> {
               Divider(
                 color: Colors.grey.shade300,
                 thickness: 1,
-              )
+              ),
             ],
           ),
         ),
