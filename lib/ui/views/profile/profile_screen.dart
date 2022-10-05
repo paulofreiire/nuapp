@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:nuapp/ui/views/profile/widgets/edit_profile.dart';
 import 'package:nuapp/ui/views/profile/widgets/tile_item_widget.dart';
 import 'package:nuapp/utils/colors_utils.dart';
 
@@ -133,7 +134,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       color: Colors.grey.shade400,
                     ),
                     TileItemWidget(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => EditProfile()));
+                      },
                       label: "Edit Profile",
                       icon: Icons.person,
                       widgetComplement: const Icon(

@@ -24,11 +24,6 @@ class _BaseScreenState extends State<BaseScreen> {
         physics: const NeverScrollableScrollPhysics(),
         children: const [
           HomeScreen(),
-          Center(
-            child: Text(
-              'Page 2',
-            ),
-          ),
           MatchScreen(),
           ChatScreen(),
           ProfileScreen()
@@ -60,10 +55,6 @@ class _BaseScreenState extends State<BaseScreen> {
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              label: '',
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.view_kanban_sharp),
               label: '',
             ),
             BottomNavigationBarItem(

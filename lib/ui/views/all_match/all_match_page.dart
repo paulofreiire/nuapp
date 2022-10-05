@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nuapp/ui/views/all_match/widgets/card_grid_widget.dart';
 import 'package:nuapp/ui/views/details/details_screen.dart';
-import 'package:nuapp/ui/views/match/widgets/card_small_widget.dart';
-import 'package:nuapp/ui/views/match/widgets/card_widget.dart';
 import 'package:nuapp/utils/colors_utils.dart';
 
 import '../../../model/perfil_user.dart';
@@ -117,7 +115,7 @@ class _AllMatchScreenState extends State<AllMatchScreen> {
                             Icons.search,
                             color: Palette.primaryColor,
                           )),
-                      SizedBox(
+                      const SizedBox(
                         width: 10,
                       ),
                       Container(
