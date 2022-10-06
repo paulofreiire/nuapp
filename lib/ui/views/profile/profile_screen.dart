@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nuapp/ui/views/profile/widgets/edit_profile.dart';
 import 'package:nuapp/ui/views/profile/widgets/tile_item_widget.dart';
-import 'package:nuapp/utils/colors_utils.dart';
+import 'package:nuapp/utils/styles/colors.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});

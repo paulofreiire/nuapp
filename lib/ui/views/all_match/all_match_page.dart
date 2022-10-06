@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nuapp/ui/views/all_match/widgets/card_grid_widget.dart';
 import 'package:nuapp/ui/views/details/details_screen.dart';
-import 'package:nuapp/utils/colors_utils.dart';
+import 'package:nuapp/utils/styles/colors.dart';
 
+import '../../../mock/mock_perfil.dart';
 import '../../../model/perfil_user.dart';
 
 class AllMatchScreen extends StatefulWidget {
@@ -13,57 +14,7 @@ class AllMatchScreen extends StatefulWidget {
 }
 
 class _AllMatchScreenState extends State<AllMatchScreen> {
-  List<PerfilUser> draggableItems = [
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-  ];
-
+ 
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -134,10 +85,11 @@ class _AllMatchScreenState extends State<AllMatchScreen> {
                 ],
               ),
 
-              // ListCardGrid
+             
               const SizedBox(
                 height: 15,
               ),
+ // ListCardGrid
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(

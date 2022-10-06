@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nuapp/utils/colors_utils.dart';
+import 'package:nuapp/utils/styles/colors.dart';
 
 class InterestWidget extends StatelessWidget {
   const InterestWidget({super.key});

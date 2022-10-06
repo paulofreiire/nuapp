@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nuapp/ui/views/match/match_screen.dart';
-import 'package:nuapp/utils/colors_utils.dart';
+import 'package:nuapp/utils/styles/colors.dart';
 import '../home/home_screen.dart';
 import '../chat/chat_list_screen.dart';
 import '../profile/profile_screen.dart';

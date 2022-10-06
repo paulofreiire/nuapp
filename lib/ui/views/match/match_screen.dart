@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:nuapp/ui/views/details/details_screen.dart';
 import 'package:nuapp/ui/views/match/widgets/card_small_widget.dart';
 import 'package:nuapp/ui/views/match/widgets/card_widget.dart';
-import 'package:nuapp/utils/colors_utils.dart';
+import 'package:nuapp/utils/styles/colors.dart';
 
-import '../../../model/perfil_user.dart';
 import '../all_match/all_match_page.dart';
 
 class MatchScreen extends StatefulWidget {
@@ -15,56 +14,6 @@ class MatchScreen extends StatefulWidget {
 }
 
 class _MatchScreenState extends State<MatchScreen> {
-  List<PerfilUser> draggableItems = [
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-  ];
 
   @override
   Widget build(BuildContext context) {

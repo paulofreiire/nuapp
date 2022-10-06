@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nuapp/ui/views/details/widget/card_details_listview_widget.dart';
 import 'package:nuapp/ui/views/details/widget/interest_widget.dart';
-import 'package:nuapp/utils/colors_utils.dart';
+import 'package:nuapp/utils/styles/colors.dart';
 
 class DetailScreen extends StatelessWidget {
   const DetailScreen({super.key});

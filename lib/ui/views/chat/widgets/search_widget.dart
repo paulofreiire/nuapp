@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 
 
-import '../../../../utils/colors_utils.dart';
+import '../../../../utils/styles/colors.dart';
 
 class SearchBarWidget extends StatelessWidget {
   const SearchBarWidget({super.key});

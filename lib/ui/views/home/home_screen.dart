@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:nuapp/ui/views/home/widgets/drag_widget.dart';
-import 'package:nuapp/utils/colors_utils.dart';
+import 'package:nuapp/utils/styles/colors.dart';
 
 import '../../../main.dart';
-import '../../../model/perfil_user.dart';
+import '../../../mock/mock_perfil.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,56 +17,6 @@ class _HomeScreenState extends State<HomeScreen>
   ValueNotifier<Swipe> swipeNotifier = ValueNotifier(Swipe.none);
   late final AnimationController _animationController;
 
-  List<PerfilUser> draggableItems = [
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples2.jpg'),
-    const PerfilUser(
-        name: 'Rohini',
-        distance: '10 miles away',
-        imageAsset: 'assets/images/examples3.jpg'),
-  ];
 
   @override
   void initState() {

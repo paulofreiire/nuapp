@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nuapp/utils/colors_utils.dart';
+import 'package:nuapp/utils/styles/colors.dart';
 
 import '../base/base_screen.dart';
 

@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:nuapp/utils/utils.dart';
 
-import '../../../../utils/colors_utils.dart';
-import 'text_field_edit.dart';
+class EditProfile extends StatefulWidget {
+  const EditProfile({super.key});
 
-class EditProfile extends StatelessWidget {
-  EditProfile({super.key});
+  @override
+  State<EditProfile> createState() => _EditProfileState();
+}
 
+class _EditProfileState extends State<EditProfile>
+    with CustomStyleFormMixin, FormsValidateMixin {
   final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
   final TextEditingController fullName = TextEditingController();
+  final TextEditingController email = TextEditingController();
+  final TextEditingController phone = TextEditingController();
+  final TextEditingController about = TextEditingController();
+  final TextEditingController interest = TextEditingController();
+  final TextEditingController address = TextEditingController();
+
   void validarCampos() {
     if (formKey.currentState!.validate()) {
     } else {}
@@ -58,110 +69,38 @@ class EditProfile extends StatelessWidget {
                   const SizedBox(
                     height: 25,
                   ),
-                  TextEditProfile(
+                  TextFormField(
                     maxLines: 1,
-                    labelText: 'Full Name',
-                    iconData: null,
-                    controller: null,
-                    validator: (
-                      value,
-                    ) {
-                      if (value != null && value.isNotEmpty) {
-                        return null;
-                      } else {
-                        return "Este Campo não pode estar vazio";
-                      }
-                    },
+                    controller: fullName,
+                    decoration: defaultTextInputStyle(
+                      label: "Full name",
+                    ),
+                    validator: nameValid,
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  TextEditProfile(
+                  TextFormField(
                     maxLines: 1,
-                    labelText: 'Email',
-                    iconData: Icons.email,
-                    controller: null,
-                    validator: (
-                      value,
-                    ) {
-                      if (value != null && value.isNotEmpty) {
-                        return null;
-                      } else {
-                        return "Este Campo não pode estar vazio";
-                      }
-                    },
+                    controller: email,
+                    decoration: defaultTextInputStyle(
+                      suffixIcon: Icons.email_outlined,
+                      label: "Email",
+                    ),
+                    validator: isEmailValid,
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  TextEditProfile(
+                  TextFormField(
+                    keyboardType: TextInputType.number,
                     maxLines: 1,
-                    labelText: 'Phone',
-                    iconData: Icons.phone,
-                    controller: null,
-                    validator: (
-                      value,
-                    ) {
-                      if (value != null && value.isNotEmpty) {
-                        return null;
-                      } else {
-                        return "Este Campo não pode estar vazio";
-                      }
-                    },
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  TextEditProfile(
-                    maxLines: 5,
-                    labelText: 'About',
-                    iconData: Icons.arrow_drop_down_rounded,
-                    controller: null,
-                    validator: (
-                      value,
-                    ) {
-                      if (value != null && value.isNotEmpty) {
-                        return null;
-                      } else {
-                        return "Este Campo não pode estar vazio";
-                      }
-                    },
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  TextEditProfile(
-                    maxLines: 1,
-                    labelText: 'Interest',
-                    iconData: Icons.edit,
-                    controller: null,
-                    validator: (
-                      value,
-                    ) {
-                      if (value != null && value.isNotEmpty) {
-                        return null;
-                      } else {
-                        return "Este Campo não pode estar vazio";
-                      }
-                    },
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  TextEditProfile(
-                    maxLines: 1,
-                    labelText: 'Address',
-                    iconData: Icons.location_on,
-                    controller: null,
-                    validator: (
-                      value,
-                    ) {
-                      if (value != null && value.isNotEmpty) {
-                        return null;
-                      } else {
-                        return "Este Campo não pode estar vazio";
-                      }
-                    },
+                    controller: phone,
+                    decoration: defaultTextInputStyle(
+                      suffixIcon: Icons.phone,
+                      label: "Phone",
+                    ),
+                    validator: isPhoneNumberValid,
                   ),
                   const SizedBox(
                     height: 20,
@@ -257,7 +196,43 @@ class EditProfile extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(
-                    height: 25,
+                    height: 20,
+                  ),
+                  TextFormField(
+                    maxLines: 2,
+                    controller: about,
+                    decoration: defaultTextInputStyle(
+                      suffixIcon: Icons.arrow_drop_down_rounded,
+                      label: "About",
+                    ),
+                    validator: notIsEmptyAndNull,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  TextFormField(
+                    maxLines: 1,
+                    controller: interest,
+                    decoration: defaultTextInputStyle(
+                      suffixIcon: Icons.edit,
+                      label: "Interest",
+                    ),
+                    validator: notIsEmptyAndNull,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  TextFormField(
+                    maxLines: 1,
+                    controller: address,
+                    decoration: defaultTextInputStyle(
+                      suffixIcon: Icons.edit,
+                      label: "Address",
+                    ),
+                    validator: notIsEmptyAndNull,
+                  ),
+                  const SizedBox(
+                    height: 20,
                   ),
                   SizedBox(
                     height: 50,

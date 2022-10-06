@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../utils/colors_utils.dart';
+import '../../../../utils/styles/colors.dart';
 
 class TileItemWidget extends StatelessWidget {
   final VoidCallback? onTap;
