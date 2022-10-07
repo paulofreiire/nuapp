@@ -136,7 +136,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     TileItemWidget(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => EditProfile()));
+                            builder: (context) => const EditProfile()));
                       },
                       label: "Edit Profile",
                       icon: Icons.person,

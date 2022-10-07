@@ -4,7 +4,6 @@ import 'package:nuapp/ui/views/details/details_screen.dart';
 import 'package:nuapp/utils/styles/colors.dart';
 
 import '../../../mock/mock_perfil.dart';
-import '../../../model/perfil_user.dart';
 
 class AllMatchScreen extends StatefulWidget {
   const AllMatchScreen({super.key});
